@@ -1,0 +1,201 @@
+/* ================= RESET DE BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 40px;
+    border-bottom: 4px solid #0b5ed7;
+}
+
+.identity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0b5ed7;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #0b5ed7;
+}
+
+.header p {
+    font-size: 15px;
+    color: #444;
+}
+
+/* ================= NAVIGATION ================= */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li a:hover {
+    background: #0b5ed7;
+    color: #fff;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0b5ed7;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    border: 2px solid #0b5ed7;
+    background: white;
+
+    transition: all 0.3s ease;
+}
+
+/* Effet hover */
+nav ul li a:hover {
+    background: #0b5ed7;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* ================= CONTENEUR PRINCIPAL ================= */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #0b5ed7;
+    font-size: 24px;
+    border-left: 6px solid #0b5ed7;
+    padding-left: 12px;
+}
+
+/* ================= TABLEAUX ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    width: 30%;
+    padding: 14px;
+    background: #f1f5f9;
+    color: #0b5ed7;
+    font-weight: 700;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 14px;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+table ul {
+    padding-left: 20px;
+}
+
+table ul li {
+    margin-bottom: 6px;
+}
+
+/* ================= FORMULAIRES ================= */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background: #0b5ed7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #084298;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .identity {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table th {
+        width: 100%;
+        display: block;
+    }
+
+    table td {
+        display: block;
+    }
+}
